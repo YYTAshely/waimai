@@ -5,10 +5,17 @@
 <template>
   <van-tabbar route>
     <van-tabbar-item replace to="/" icon="home-o">
-      我要考勤
+      首页
     </van-tabbar-item>
-    <van-tabbar-item replace to="/attendanceRecord" icon="home-o">
-      考勤记录
+    <van-tabbar-item replace to="/cart" icon="cart-o">
+      购物车
+    </van-tabbar-item>
+    <van-tabbar-item replace to="/order" icon="orders-o">
+      订单
+    </van-tabbar-item>
+    <van-tabbar-item replace to="/mine" icon="user-o">
+      我的
     </van-tabbar-item>
   </van-tabbar>
 </template>
+   
