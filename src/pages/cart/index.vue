@@ -1,5 +1,13 @@
+<script setup>
+import { useRouter } from 'vue-router';
+const router = useRouter();
+</script>
+
 <template>
-    <svg class="icon" aria-hidden="true">
-        <use xlink:href="#icon-icon-test"></use>
-    </svg>
+    <div>
+        <van-nav-bar title="购物车" left-arrow @click-left="router.back()" />
+        <div class="text-[green]">文字</div>
+    </div>
 </template>
+  
+  

@@ -1,55 +1,15 @@
- <template>
-     <div class="storeDetails">
-        <Header title="店铺"></Header>
-        <div class="content">
-            <div class="img"></div>
-            <div class="footSort">
-                <div class="name">
-                    {{ title }}
-                    <img :src="img" alt="" class="store-img">
-                </div>
-            </div>
-        </div>
-     </div>
- </template>
-
 <script setup>
-    import Header from '~/components/header.vue';
+import { useRouter } from 'vue-router';
+const router = useRouter();
 </script>
 
-<style scoped>
-.storeDetails {
-      height: 100%;
-      display: flex;
-      flex-flow: column;
-    }
-.content {
-        flex: 1;
-        overflow-y: auto;
-      }
-.content .img {
-            background: url("../../assets/yuna.jpg") no-repeat center/cover;
-            width: 100%;
-            height: 150px;
-        }
-.foodSort {
-          height: 500px;
-          background-color: #fff;
-          margin-top: -30px;
-          border-radius: 20px 20px 0 0;
-        }
-.foodSort .sort{
-    margin-top: 10px;
-}
-.foodSort .name{
-    display: flex;
-    padding: 20px;
-    justify-content: space-between;
-}
-.name .store-img {
-    width: 80px;
-    height: 80px;
-    border-radius: 10px;
-    margin-top: -30px;
-}
-</style>
+<template>
+    <div>
+        <van-nav-bar title="店铺" left-arrow @click-left="router.push()" />
+        <div><img src="https://th.bing.com/th/id/OIP.63ZHyYLs_0HQzuTDqUUa5AHaE9?rs=1&pid=ImgDetMain"></div>
+        <div class="flex justify-between px-8 mt-[-1rem] rounded bg-red-500 z-[9999] relative">
+            <div>酸菜鱼</div>
+            <div><img src="https://img1.baidu.com/it/u=1599947592,1695977044&fm=253&fmt=auto&app=138&f=JPEG?w=640&h=440" class="w-[72px] h-[72px]"></div>
+        </div>
+    </div>
+</template>
