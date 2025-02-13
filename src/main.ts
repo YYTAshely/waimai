@@ -9,6 +9,7 @@ import type { UserModule } from './types'
 import '@unocss/reset/tailwind.css'
 import './styles/main.css'
 import 'uno.css'
+import './api/mock'
 
 // const routes = setupLayouts(generatedRoutes)
 

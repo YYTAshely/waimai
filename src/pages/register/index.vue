@@ -16,9 +16,8 @@ const onSubmit = (values) => {
             showToast('用户名已存在');
             return
         }
-        else {
-            register(values);
-        }
+    } else {
+        register(values);
     }
 }
 
@@ -42,7 +41,7 @@ const register = (values) => {
             <van-button round block type="primary" native-type="submit">
                 注册
             </van-button>
-            <van-button round block type="primary" style="margin-top: 1rem;" @click="router.push(" /login")">
+            <van-button round block type="primary" style="margin-top: 1rem;" @click="router.push('/login')">
                 去登入
             </van-button>
         </div>
